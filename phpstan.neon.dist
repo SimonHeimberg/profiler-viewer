@@ -1,0 +1,9 @@
+# default config for phpstan
+#
+# more infos: vendor/bin/phpstan analyze --help
+
+parameters:
+    level: 2 # higher when all is fixed
+    paths:
+      - src/
+      - tests/
