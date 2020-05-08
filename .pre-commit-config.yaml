@@ -1,0 +1,46 @@
+# pre-commit hooks, see https://pre-commit.com
+#
+# install git hooks with pre-commit istall
+
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v2.0.0
+  hooks:
+    - id: trailing-whitespace
+      exclude_types: [markdown]
+    - id: end-of-file-fixer
+    - id: check-yaml
+    - id: check-json
+    - id: check-xml
+    - id: check-added-large-files
+    - id: forbid-new-submodules
+    - id: check-symlinks
+    - id: check-executables-have-shebangs
+    - id: check-merge-conflict
+    - id: mixed-line-ending
+
+- repo: https://github.com/digitalpulp/pre-commit-php.git
+  rev: 1.4.0
+  hooks:
+    - id: php-lint
+    - id: php-cs-fixer
+      files: \.(php)$
+    - id: php-stan
+      files: \.(php)$
+
+- repo: https://github.com/motet-a/jinjalint
+  rev: 01e0a4d8f1e
+  hooks:
+    - id: jinjalint
+      types: [text]
+      files: \.twig$
+
+- repo: local
+  hooks:
+    - id: matching_parameters
+      name: param values in %
+      types: [yaml]
+      files: ^config/
+      language: pygrep
+      entry: '^[^%#\n]*%([^%\n]*%[^%\n]*%)*[^%\n]*($|#)'
+      args: [--multiline]
