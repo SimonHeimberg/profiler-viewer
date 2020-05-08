@@ -26,7 +26,8 @@
     },
     "autoload": {
         "psr-4": {
-            "AppPV\\": "src/"
+            "AppPV\\": "src/",
+            "": "external_src"
         }
     },
     "autoload-dev": {

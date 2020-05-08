@@ -1,0 +1,6 @@
+# place classes required for loading dumps here
+#
+# set them the full namespace as path
+
+*
+!/.gitignore
