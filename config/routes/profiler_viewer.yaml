@@ -1,0 +1,3 @@
+_profiler_viewer:
+    resource: "@ProfilerViewerBundle/Resources/config/routing/all.yaml"
+    prefix: /pview

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2acbcba67ac11f355f0e62442cc7d12d",
+    "content-hash": "9da917c3306c67bddd6b82786bc52277",
     "packages": [
         {
             "name": "psr/cache",
@@ -193,6 +193,53 @@
                 "psr-3"
             ],
             "time": "2020-03-23T09:12:05+00:00"
+        },
+        {
+            "name": "simon-heimberg/profiler-viewer-bundle",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../bundle",
+                "reference": "ecf9740a222d37282542b0a6e966ae332bec50fb"
+            },
+            "require": {
+                "symfony/web-profiler-bundle": "^4.4|^5.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpstan/phpstan": "^0.12.19",
+                "symfony/maker-bundle": "^1.15"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "SimonHeimberg\\ProfilerViewerBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/tests/"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "SimonHeimberg\\ProfilerViewerBundle\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SimonHeimberg",
+                    "email": "simon.heimberg@heimberg-ea.ch"
+                }
+            ],
+            "description": "view profiler data from some other place",
+            "support": {
+                "issues": "https://github.com/SimonHeimberg/ProfilerViewer/issues/"
+            },
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "symfony/cache",
@@ -2937,7 +2984,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "simon-heimberg/profiler-viewer-bundle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
