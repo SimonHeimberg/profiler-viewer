@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Profiler Viewer Intro{% endblock %}
+
+{% block body %}
+    <style>
+        .example-wrapper {
+            margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif;
+         }
+        .example-wrapper code {
+            background: #F5F5F5; padding: 2px 6px;
+        }
+    </style>
+
+    <div class="example-wrapper">
+        <h1>Welcome to Profiler Viewer ✅</h1>
+        <p>
+            Set the variable <code>PROFILER_VIEWER_PROFILER_PATH</code> to the path
+            of the profiler you want to see the data from (likely in .env.local).
+            <br/>
+            Exmaple:
+            <code>
+                PROFILER_VIEWER_PROFILER_PATH=/mendia/from_your_system/project/var/cache/prod/profiler/
+            </code>
+        </p>
+        <p>
+            Then go to <a href="{{ path('profiler_viewer_home') }}">
+            {{ path('profiler_viewer_home') }}</a> and use the profiler as usual.
+        </p>
+        <p>
+            To see more info, see <a href="https://github.com/SimonHeimberg/profiler_viewer_app/blob/master/README.md">README on github</a>.
+        </p>
+    </div>
+{% endblock %}
