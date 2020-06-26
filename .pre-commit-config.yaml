@@ -44,3 +44,10 @@ repos:
       language: pygrep
       entry: '^[^%#\n]*%([^%\n]*%[^%\n]*%)*[^%\n]*($|#)'
       args: [--multiline]
+    - id: lint-container
+      name: check config of container
+      files: ^config/
+      language: script
+      entry: bin/console
+      args: [lint:container]
+      pass_filenames: false
