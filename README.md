@@ -20,6 +20,20 @@ Navigate to the page http://your-app-base-url:8765/pview/. Use the profiler as u
 When the data can not be displayed and you get an error message, then follow
 [the instruction about missing classes](#Missing Classes).
 
+# installation
+
+select the version matching to your app:
+
+[master](https://github.com/SimonHeimberg/profiler-viewer/tree/master): symfony 5
+[sy4](https://github.com/SimonHeimberg/profiler-viewer/tree/sy4): symfony 4.4
+[sy3](https://github.com/SimonHeimberg/profiler-viewer/tree/sy3): symfony 3.4
+
+## install with git and composer
+
+git clone --single-branch --branch master ssh://git@github.com/SimonHeimberg/profiler-viewer profiler-viewer
+cd ./profiler-viewer
+composer install
+
 # problems
 ## Missing Classes
 Copy the missing classes into `profiler-viewer/external_src/` with the full
