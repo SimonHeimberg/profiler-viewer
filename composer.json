@@ -3,7 +3,7 @@
     "description": "view profiler data of symfony from some other place",
     "type": "project",
     "keywords": ["profiler", "symfony"],
-    "homepage": "httsp://github.com/SimonHeimberg/profiler-viewer",
+    "homepage": "https://github.com/SimonHeimberg/profiler-viewer",
     "license": "MIT",
     "authors": [
         {
@@ -15,7 +15,7 @@
         "php": "^7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "simon-heimberg/profiler-viewer-bundle": "*@dev",
+        "simon-heimberg/profiler-viewer-bundle": "0.*@beta",
         "symfony/console": "5.0.*",
         "symfony/dotenv": "5.0.*",
         "symfony/flex": "^1.3.1",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f59849ab3dfdd9de5ad504bc4f36c22",
+    "content-hash": "fb262e56a9564afaaed182344a6b9e49",
     "packages": [
         {
             "name": "psr/cache",
@@ -196,14 +196,20 @@
         },
         {
             "name": "simon-heimberg/profiler-viewer-bundle",
-            "version": "dev-master",
+            "version": "v0.9.0-beta.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SimonHeimberg/profiler-viewer-bundle.git",
+                "reference": "bb547cbb018d44368f0dea19efb13def156dd542"
+            },
             "dist": {
-                "type": "path",
-                "url": "../bundle",
-                "reference": "ecf9740a222d37282542b0a6e966ae332bec50fb"
+                "type": "zip",
+                "url": "https://api.github.com/repos/SimonHeimberg/profiler-viewer-bundle/zipball/bb547cbb018d44368f0dea19efb13def156dd542",
+                "reference": "bb547cbb018d44368f0dea19efb13def156dd542",
+                "shasum": ""
             },
             "require": {
-                "symfony/web-profiler-bundle": "^4.4|^5.0"
+                "symfony/web-profiler-bundle": "^5.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.16",
@@ -219,11 +225,7 @@
                     "/tests/"
                 ]
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "SimonHeimberg\\ProfilerViewerBundle\\Tests\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -233,13 +235,13 @@
                     "email": "simon.heimberg@heimberg-ea.ch"
                 }
             ],
-            "description": "view profiler data from some other place",
-            "support": {
-                "issues": "https://github.com/SimonHeimberg/ProfilerViewer/issues/"
-            },
-            "transport-options": {
-                "relative": true
-            }
+            "description": "view profiler data of symfony from some other place",
+            "homepage": "https://github.com/SimonHeimberg/profiler-viewer-bundle",
+            "keywords": [
+                "profiler",
+                "symfony"
+            ],
+            "time": "2020-09-24T00:57:17+00:00"
         },
         {
             "name": "symfony/cache",
@@ -516,6 +518,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-03-30T11:42:42+00:00"
         },
         {
@@ -646,6 +662,20 @@
                 "env",
                 "environment"
             ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-03-27T16:56:45+00:00"
         },
         {
@@ -701,6 +731,20 @@
             ],
             "description": "Symfony ErrorHandler Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-03-30T14:14:32+00:00"
         },
         {
@@ -771,6 +815,20 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-03-27T16:56:45+00:00"
         },
         {
@@ -1107,6 +1165,20 @@
             ],
             "description": "Symfony FrameworkBundle",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-04-28T17:58:55+00:00"
         },
         {
@@ -1259,6 +1331,20 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-04-28T18:53:25+00:00"
         },
         {
@@ -1945,6 +2031,20 @@
             ],
             "description": "Symfony TwigBundle",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-03-27T16:56:45+00:00"
         },
         {
@@ -2205,6 +2305,20 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-04-28T17:58:55+00:00"
         },
         {
@@ -3013,7 +3127,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "simon-heimberg/profiler-viewer-bundle": 20
+        "simon-heimberg/profiler-viewer-bundle": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,
