@@ -1,6 +1,6 @@
 # pre-commit hooks, see https://pre-commit.com
 #
-# install git hooks with pre-commit istall
+# install git hooks with pre-commit install
 
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -44,3 +44,17 @@ repos:
       language: pygrep
       entry: '^[^%#\n]*%([^%\n]*%[^%\n]*%)*[^%\n]*($|#)'
       args: [--multiline]
+    - id: lint-container
+      name: check config of container
+      files: ^config/
+      language: script
+      entry: bin/console
+      args: [lint:container]
+      pass_filenames: false
+    - id: composer-validate
+      name: composer files valid
+      files: composer.(json|lock)
+      language: system
+      entry: composer
+      args: [validate]
+      pass_filenames: false

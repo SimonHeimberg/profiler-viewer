@@ -1,6 +1,16 @@
 {
+    "name": "simon-heimberg/profiler-viewer",
+    "description": "view profiler data of symfony from some other place",
     "type": "project",
+    "keywords": ["profiler", "symfony"],
+    "homepage": "https://github.com/SimonHeimberg/profiler-viewer",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "SimonHeimberg",
+            "email": "simon.heimberg@heimberg-ea.ch"
+        }
+    ],
     "require": {
         "php": "^7.2.5",
         "ext-ctype": "*",
@@ -17,6 +27,9 @@
         "friendsofphp/php-cs-fixer": "^2.16",
         "phpstan/phpstan": "^0.12.19",
         "symfony/maker-bundle": "^1.15"
+    },
+    "support": {
+        "issues": "https://github.com/SimonHeimberg/profiler-viewer/issues/"
     },
     "config": {
         "preferred-install": {

@@ -153,13 +153,13 @@
         }
     },
     "symfony/mime": {
-        "version": "v5.0.8"
+        "version": "v4.4.13"
     },
     "symfony/options-resolver": {
         "version": "v5.0.8"
     },
     "symfony/polyfill-intl-idn": {
-        "version": "v1.15.0"
+        "version": "v1.18.1"
     },
     "symfony/polyfill-intl-normalizer": {
         "version": "v1.18.1"
@@ -169,6 +169,9 @@
     },
     "symfony/polyfill-php73": {
         "version": "v1.15.0"
+    },
+    "symfony/polyfill-php80": {
+        "version": "v1.18.1"
     },
     "symfony/process": {
         "version": "v5.0.8"
